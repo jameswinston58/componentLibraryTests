@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PrimerExample from './primerExample.js'
+import ReakitExample from './reakitExample.js'
+import ReakitExampleXStyled from './reakitExampleXStyled.js'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: "2rem" }}>
+      <h1>Design System Playground</h1>
+      <h4>All examples below are making or manipulating a button within the red area.<br />
+      The red bordered area has a padding of 2rem.<br />
+      The attempt here is to figure out how easy it is to add custom props, like say: size="small"
+      </h4>
+      <PrimerExample />
+      <br /><br /><br /><br />
+      <ReakitExample />
+      <br /><br /><br /><br />
+      <ReakitExampleXStyled />
+      <br /><br /><br /><br />
     </div>
   );
 }
