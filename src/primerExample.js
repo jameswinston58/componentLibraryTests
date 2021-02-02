@@ -1,4 +1,4 @@
-import { ButtonPrimary, theme as primer } from "@primer/components";
+import { Button, theme as primer } from "@primer/components";
 import { ThemeProvider } from "styled-components";
 
 const theme = {
@@ -6,7 +6,7 @@ const theme = {
   fontSizes: [10, 12, 16, 24, 48],
 };
 
-theme.buttons.primary.bg.default = "#06BFA8";
+theme.colors.grey = "#E4E6E6";
 
 const PrimerExample = () => {
   return (
@@ -15,9 +15,15 @@ const PrimerExample = () => {
         <h2>Primer</h2>
         <p>Complete Library that uses Styled System and Design Tokens</p>
         <div style={{ border: "2px solid red", padding: "2rem" }}>
-          <ButtonPrimary mt={5} as="a" px={1}>
-            James
-          </ButtonPrimary>
+          <Button mt={5} as="a" bg={"grey"} px={1} variant="small">
+            Small
+          </Button>
+          <Button mt={5} as="a" px={1} variant="medium">
+            Medium
+          </Button>
+          <Button mt={5} as="a" px={1} variant="large">
+            Large
+          </Button>
         </div>
       </div>
     </ThemeProvider>

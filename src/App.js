@@ -2,6 +2,7 @@ import React from "react";
 import PrimerExample from "./primerExample.js";
 import ReakitExample from "./reakitExample.js";
 import ReakitExampleXStyled from "./reakitExampleXStyled.js";
+import PricelineExample from "./pricelineExample.js";
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       <br />
       <br />
       <ReakitExampleXStyled />
+      <br />
+      <br />
+      <br />
+      <br />
+      <PricelineExample />
       <br />
       <br />
       <br />

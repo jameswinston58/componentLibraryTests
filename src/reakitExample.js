@@ -43,6 +43,10 @@ const ReakitExample = () => {
         <StyledButton bg="green" color="white" size="big">
           Button
         </StyledButton>
+        <br /><br />As DIV<br />
+        <StyledButton as="div" bg="green" color="white" size="big">
+          Button
+        </StyledButton>
       </div>
     </ThemeProvider>
   );
