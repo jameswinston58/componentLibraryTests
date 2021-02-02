@@ -21,7 +21,7 @@ const PrimerExample = () => {
             Except this isn't working. Will probably need to tackle the whole Theme File.
         </p>
         <div style={{ border: "2px solid red", padding: "2rem" }}>
-          <Button bg="primary.green" mt={5} as="a" px={1} variant="large">
+          <Button color="primary.green" mt={5} as="a" px={1} variant="large">
             Small
           </Button>
         </div>
