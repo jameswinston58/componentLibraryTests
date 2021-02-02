@@ -3,7 +3,6 @@ import { Button } from "reakit/Button";
 import styled, {ThemeProvider} from "styled-components";
 import { color, variant } from 'styled-system'
 
-
 const theme = {
   colors: {
     black: '#000e1a',
@@ -18,7 +17,7 @@ const theme = {
 //this example is like this on purpose. we'd clean this up.
 //HOW CAN WE DO VARIANTS IN THE THEME FILE?
 const StyledButton = styled(Button)`
-${color}  
+${color} 
 ${variant({
     prop: 'size',
     variants: {
@@ -29,6 +28,7 @@ ${variant({
       small: {
         padding: 1,
         lineHeight: 'body',
+        margin: 4,
       },
     }
   })}`
