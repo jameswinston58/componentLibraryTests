@@ -4,11 +4,21 @@ import { ThemeProvider, Button } from 'pcln-design-system'
 const theme = {
   palette: {
     primary: {
-      base: '#ff001d',
+      base: '#06BFA8',
       dark: '#ffa52f',
       green: "#06BFA8",
-    }     
-  }}
+    },   
+    componentStyles: {
+      Button: {
+        fill: {
+          primary: {
+            color: '#fff',
+          }
+          }
+        }
+      }
+    }
+  }
 
 const PrimerExample = () => {
   return (
@@ -20,9 +30,10 @@ const PrimerExample = () => {
         <p>It's using contrast ratios to determine bg and text colors, unless you overide them.
             Except this isn't working. Will probably need to tackle the whole Theme File.
         </p>
+        <p>No Matter what I do I can't get that to turn white.</p>
         <div style={{ border: "2px solid red", padding: "2rem" }}>
-          <Button color="primary.green" mt={5} as="a" px={1} variant="large">
-            Small
+          <Button  mt={5} as="button" size="large">
+            Large
           </Button>
         </div>
       </div>
