@@ -1,5 +1,6 @@
 import React from "react";
 import PrimerExample from "./primerExample.js";
+import PrimerAsImportExample from "./primerAsImportExample.js";
 import ReakitExample from "./reakitExample.js";
 import ReakitExampleXStyled from "./reakitExampleXStyled.js";
 import PricelineExample from "./pricelineExample.js";
@@ -17,6 +18,11 @@ function App() {
         The attempt here is to figure out how easy it is to add custom props,
         like say: size="small"
       </h4>
+      <PrimerAsImportExample />
+      <br />
+      <br />
+      <br />
+      <br />
       <PrimerExample />
       <br />
       <br />
